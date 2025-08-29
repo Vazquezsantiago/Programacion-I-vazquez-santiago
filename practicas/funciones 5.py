@@ -4,6 +4,7 @@ def es_par(numero):
         return(numero,"es par")
     else:
         return(numero, "no es par")
+    
 num=int(input("ingrese un numero: "))
 
 print(es_par(num))
