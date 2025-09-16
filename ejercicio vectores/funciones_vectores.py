@@ -7,15 +7,17 @@ def mostrar_agotados(titulos, cantidad):
         if cantidad[i] == 0:
             print(f"{titulos[i]} esta agotado")
 salir=""
-def agregar(titulos, cantidad):
+def agregar(titulos, cantidad,a):
     salir=""
-    for i in range(len(titulos)):
-        if len(titulos) <= 19:
-            titulos[i] = str(input("ingrese un nuevo titulo:"))
-            cantidad[i] = int(input("ingrese stock: "))
-            salir = input("ingrese x para salir")
-            if salir == "x":
-                break
+    while a < 20 and salir != "x":
+        
+        nuevo = str(input("ingrese un nuevo titulo:"))
+        stock = int(input("ingrese stock: "))
+        titulos[a] = nuevo
+        cantidad[a] = stock
+        a+=1
+
+        salir = input("ingrese x para salir")
 def modificar(titulos, cantidad):
     for i in range(len(titulos)):
         a=int(input("ingrese que numero de titulo desea modificar"))

@@ -1,5 +1,5 @@
-a = [0]*2
-b = [0]*2
+a = [0]*5
+b = [0]*5
 numero1 = 0
 numero2 = 0
 for i in range (len(a)):
