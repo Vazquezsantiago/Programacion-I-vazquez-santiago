@@ -15,7 +15,7 @@ while True:
         ingresar(numero_participantes, participantes, puntuacion, comentario)
         pass
     elif seleccion == "2":
-        mostrar(participantes, puntuacion, comentario)
+        mostrar(participantes, puntuacion, comentario, numero_participantes)
         pass
     elif seleccion == "3":
         pass
