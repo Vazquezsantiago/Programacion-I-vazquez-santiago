@@ -1,8 +1,8 @@
-from funciones_vectores import ingresar
+from funciones_vectores import *
 
 numero_participantes=0
-participantes=0
-
+participantes=[""]*10
+puntuacion=[0]*10
 while True:
     print("--- Menú Encuesta de Satisfacción ---")
     print("1. Ingresar participantes")
@@ -11,9 +11,10 @@ while True:
     print("4. Salir")
     seleccion = input("Seleccione una opción (1-4): ")
     if seleccion == "1":
-        ingresar(numero_participantes,participantes)
+        ingresar(numero_participantes,participantes,puntuacion)
         pass
     elif seleccion == "2":
+        mostrar(participantes, puntuacion)
         pass
     elif seleccion == "3":
         pass
