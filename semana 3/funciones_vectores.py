@@ -6,9 +6,12 @@ def buscar(array, numero):
         else:
             print("-1")
 
-
-def ingresar(n_participantes, participantes,puntuacion, comentario):
+def cantidad(n_participantes):
     n_participantes = int(input("cuantos participantes desea ingresar?(max 10)"))
+    return n_participantes
+
+def ingresar(n_participante, participantes,puntuacion, comentario):
+
     for i in range(n_participantes):
         nombre=str(input(f"ingrese el nombre del  participante {i+1}:"))
 

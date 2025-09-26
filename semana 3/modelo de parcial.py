@@ -12,6 +12,7 @@ while True:
     print("4. Salir")
     seleccion = input("Seleccione una opción (1-4): ")
     if seleccion == "1":
+        cantidad(numero_participantes)
         ingresar(numero_participantes, participantes, puntuacion, comentario)
         print(numero_participantes)
         pass
