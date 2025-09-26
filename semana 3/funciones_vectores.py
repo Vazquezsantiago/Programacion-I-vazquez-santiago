@@ -34,7 +34,6 @@ def mostrar(participantes, nota, comentario, numero):
     for i in range (numero):
         print(participantes[i])
         print(nota[i])
-        suma=0
         if nota[i]>0:
             suma=nota[i+suma]
         
