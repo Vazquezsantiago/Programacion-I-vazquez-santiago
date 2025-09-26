@@ -16,7 +16,7 @@ while True:
         print(numero_participantes)
         pass
     elif seleccion == "2":
-        mostrar(participantes, puntuacion, comentario, numero_participantes)
+        mostrar(participantes, puntuacion, comentario)
         pass
     elif seleccion == "3":
         pass

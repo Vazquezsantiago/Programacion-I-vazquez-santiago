@@ -30,13 +30,17 @@ def ingresar(n_participantes, participantes,puntuacion, comentario):
         if desea == "no":
             break
 
-def mostrar(participantes, nota, comentario, numero):
+def mostrar(participantes, nota, comentario):
+    suma=0
+    contador=0
     for i in range (len(participantes)):
         print(participantes[i])
         print(nota[i])
         if nota[i]>0:
-            suma=nota[i+suma]
+            contador += 1
+            suma=nota[i]+suma
         print (comentario[i])
-        promedio=suma/numero        
+
+        promedio=suma/contador     
     print(f"el promedio de puntuacion es{promedio}")
     
