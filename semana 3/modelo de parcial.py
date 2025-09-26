@@ -13,6 +13,7 @@ while True:
     seleccion = input("Seleccione una opción (1-4): ")
     if seleccion == "1":
         ingresar(numero_participantes, participantes, puntuacion, comentario)
+        print(numero_participantes)
         pass
     elif seleccion == "2":
         mostrar(participantes, puntuacion, comentario, numero_participantes)
